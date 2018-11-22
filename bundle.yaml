@@ -9,8 +9,8 @@ applications:
     to:
       - "0"
     annotations:
-      "gui-x": "450"
-      "gui-y": "-170"
+      "gui-x": "90"
+      "gui-y": "-122"
   slurm-dbd:
     charm: "cs:~omnivector/slurm-dbd-1"
     constraints: "cores=2 mem=4G"
@@ -18,8 +18,8 @@ applications:
     to:
       - "1"
     annotations:
-      "gui-x": "300"
-      "gui-y": "-170"
+      "gui-x": "381"
+      "gui-y": "-122.0"
   slurm-controller: 
     charm: "cs:~omnivector/slurm-controller-4"
     constraints: "cores=2 mem=4G"
@@ -27,8 +27,8 @@ applications:
     to:
       - "2"
     annotations:
-      "gui-x": "35"
-      "gui-y": "-140"
+      "gui-x": "90"
+      "gui-y": "-497"
   slurm-node: 
     charm: "cs:~omnivector/slurm-node-3"
     constraints: "cores=2 mem=4G"
@@ -36,8 +36,8 @@ applications:
     to:
       - "3"
     annotations:
-      "gui-x": "80"
-      "gui-y": "140"
+      gui-x: "-185"
+      gui-y: "-122.0"
 relations:
   - - "percona-cluster:shared-db"
     - "slurm-dbd:db-mysql"
