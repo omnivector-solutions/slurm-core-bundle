@@ -13,7 +13,7 @@ applications:
       "gui-x": "90"
       "gui-y": "-122"
   slurm-dbd:
-    charm: "cs:~omnivector/slurm-dbd-1"
+    charm: "cs:~omnivector/slurm-dbd"
     constraints: "cores=2 mem=4G"
     num_units: 1
     to:
@@ -22,7 +22,7 @@ applications:
       "gui-x": "381"
       "gui-y": "-122.0"
   slurm-controller: 
-    charm: "cs:~omnivector/slurm-controller-5"
+    charm: "cs:~omnivector/slurm-controller"
     constraints: "cores=2 mem=4G"
     num_units: 1
     to:
@@ -31,7 +31,7 @@ applications:
       "gui-x": "90"
       "gui-y": "-497"
   slurm-node: 
-    charm: "cs:~omnivector/slurm-node-5"
+    charm: "cs:~omnivector/slurm-node"
     constraints: "cores=2 mem=4G"
     num_units: 1
     to:
